@@ -118,6 +118,7 @@ ol {
   width: fit-content;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-form__label:focus {
@@ -199,7 +200,7 @@ ol {
 }
 
 .button {
-  block-size: 34px;
+  min-block-size: 34px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -211,7 +212,7 @@ ol {
 }
 
 .search-form__submit-button {
-  inline-size: 194px;
+  min-inline-size: 194px;
   align-self: end;
 }
 
@@ -264,8 +265,8 @@ ol {
 }
 
 .content__list-item {
-  inline-size: 390px;
-  margin: 0 3px 3px;
+  max-inline-size: 390px;
+  margin: 0 3px 0 3px;
 }
 
 .content__card-link {
@@ -298,8 +299,8 @@ ol {
 }
 
 .content__video-card-description-container {
-  inline-size: 196px;
-  block-size: 103px;
+  max-inline-size: 196px;
+  inline-size: 100%;
   flex-grow: 1;
   color: #fff;
 }
